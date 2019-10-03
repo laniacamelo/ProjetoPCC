@@ -17,6 +17,74 @@
 
   <link href="https://fonts.googleapis.com/css?family=Allura|Black+Ops+One|Cinzel|Monoton|Press+Start+2P|Raleway+Dots&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<style rel="stylesheet">
+
+    img{
+          border-radius:10px;
+          cursor:pointer;
+    }
+
+    .modalVisual{
+          display:none;
+          position:fixed;
+          z-index:1;
+          padding-top:100px;
+          left:0;
+          top:0;
+          width:100%;
+          height:100%;
+          overflow:auto;
+          background-color:rgba(0,0,0,0.8);
+    }
+
+    .modalConteudo{
+          margin:auto;
+          display:block;
+          width:100%;
+          max-width:800px;
+    }
+
+    #txtImg{
+          margin:auto;
+          display:block;
+          width:80%;
+          max-width:700px;
+          text-align:center;
+          color:#ccc;
+          padding:10px 0;
+          height:150px;
+    }
+
+    .fechar{
+          position:absolute;
+          top:100px;
+          right:35px;
+          color:#fff;
+          font-size:40px;
+          font-weight:bold;
+          cursor:pointer;
+    }
+
+</style>
+
+<script>
+    function clique(img){
+          var modal=document.getElementById('janelaModal');
+          var modalImg=document.getElementById("imgModal");
+          var captionTexto=document.getElementById("txtImg");
+          var btFechar=document.getElementsByClassName("fechar")[0];
+
+          modal.style.display="block";
+          modalImg.src=img.src;
+          modalImg.alt=img.alt;
+          captionTexto.innerHTML=img.alt;
+
+          btFechar.onclick=function(){
+                modal.style.display="none";
+          }
+    }
+
+</script>
 </head>
  
 <body>
@@ -71,9 +139,47 @@
     <div class="cartao">
         <div class="cartao-container">
             <div class="cartao-front"> <img src="img/decoracao/avatar.png" height="90%"> </div>
-            <div class="cartao-back"></div>
+            <div class="cartao-back"> </div>
         </div>
     </div
+    <div> </div>
+
+    <img id="imagem1" src="img/projetos/equipe.jpg" alt="Balneário Camboriú - Praia 1" width="300" height="200" 
+    onclick="clique(this)">
+    <img id="imagem2" src="img/projetos/equipe.jpg" alt="Balneário Camboriú - Praia 2" width="300" height="200" onclick="clique(this)">
+    <img id="imagem3" src="img/projetos/equipe.jpg" alt="Balneário Camboriú - Praia 3" width="300" height="200" onclick="clique(this)">
+
+    <div id="janelaModal" class="modalVisual">
+          <span class="fechar">x</span>
+          <img class="modalConteudo" id="imgModal">
+          <div id="box1">
+              <div class="inicio">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/projetos/formula_drone1.png" height="70%" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/projetos/equipe.jpg"  height="70%"  alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/projetos/placa_ifcopter1.png"  height="70%" alt="Third slide">
+                      </div>
+                  </div>
+                      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                </div>
+              </div>
+            </div>
+          <div id="txtImg"></div>
+    </div>
+
 
 
       <div id="rodape" class="container-fluid ">
@@ -87,7 +193,9 @@
          <hr color="#000000"/>
          <h5 align="center">&copy;Copyright Lânia Camelo Brito</h5>
       </div>
-    
+
+
+
 
 
 
