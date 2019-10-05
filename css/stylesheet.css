@@ -1,6 +1,6 @@
 
 
-body{background-color: #FFFFF0;
+body{background-color: #FFFAFA;
      position: relative; 
 }
 
@@ -407,8 +407,8 @@ img{
 
 .config_texto{
 	align-items: justify;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 16%;
+	margin-right: 16%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 }
