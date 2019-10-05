@@ -399,6 +399,16 @@ img{
 	margin-right: 10%;
 }
 
-.imagemjn{
-	margin: 2%;
+#tituloimg{
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
+
+.config_texto{
+	align-items: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
 }
