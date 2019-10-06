@@ -49,7 +49,8 @@ body{background-color: #FFFAFA;
 }
 
 .painel-1-1{
-	width: 450px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
 }
 
 .painel-1-1-sobre{
@@ -162,13 +163,6 @@ body{background-color: #FFFAFA;
 	font-size: 18px;
 }
 
-.login{
-	width: 400px;
-	border-radius: 10px;
-	border: 2px;
-	color: black;
-}
-
 .form{
 	margin-top:110px;
 	margin-left: 20px;
@@ -249,10 +243,6 @@ input::-webkit-input-placeholder {
 	margin-top: 2%;
 }
 
-.card-text{
-	font-size: 20px;
-}
-
 .noticias{
 	margin-left: 10%;
 	margin-right: 10%;
@@ -299,8 +289,9 @@ input::-webkit-input-placeholder {
 }
 
 .card-text{
-	font-size: 20px;
+	font-size: 16px;
 	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .painel_inicial_2 p{
