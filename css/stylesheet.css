@@ -4,48 +4,39 @@ body{background-color: #FFFAFA;
      position: relative; 
 }
 
+header{
+}
+
+.container{
+	width: 80%;
+	text-align: center;
+	margin-left: 30%;
+}
+
+@media only screen and (max-width: 800px){
+	.container{
+		margin-left: 0;
+	}
+}
 
 
 .bg-secundario{
 	background-color: #FFFFFF!important;
 }
 
-#mainNav{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: Montserrat;
-	border-color: transparent;
-	height: 80px;
-}
-
-#mainNav .navbar-brand{
-	color:black;
-	font-size: 35px;
-}
-
-#navbarResponsive a{
-	color: black;
-}
-
-#navbarResponsive a:hover{
-	color: #4169E1;
-}
-
-.container{
-	width: 90%;
-}
-
-.titulo_pagina{
-	font-family: 'Cinzel', serif;
-	width: 100%;
-
-}
 
 .titulo{
-	margin-left: 20%;
 	font-size: 50px; 
-	font-family: 'Black Ops One', 
-	cursive; margin:0;   
+	font-family: 'Black Ops One', cursive; 
+	margin:0;   
+}
+
+.navbar.container{
+	align-items: center;
+}
+
+.imagem_principal{
+	margin-top: 6%;
 }
 
 .painel-1-1{
@@ -170,12 +161,6 @@ body{background-color: #FFFAFA;
 	margin-bottom: 20px;
 }
 
-.container {
-  width:100%;
-  position: relative;
-  height: 50px;
-}
-
 input {
 	outline: none;
 }
@@ -289,7 +274,7 @@ input::-webkit-input-placeholder {
 }
 
 .card-text{
-	font-size: 16px;
+	font-size: 18px;
 	text-align: justify;
 	font-family: 'Montserrat', sans-serif;
 }
