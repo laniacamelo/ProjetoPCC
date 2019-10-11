@@ -218,10 +218,28 @@ header{
 	align-items: center;
 }
 
+@media only screen and (max-width: 600px){
+	#texto_2 {
+		margin-left: 10%;
+		margin-right: 10%;
+	}	
+}
+
 #texto_2 p{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 }
+
+#texto_2 img{
+	width: 80%;
+}
+
+@media only screen and (max-width: 600px){
+	#texto_2 img{
+		width: 50%;
+	}
+}
+
 
 .form{
 	margin-top:110px;
@@ -408,4 +426,34 @@ img{
 	margin-right: 16%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
+}
+
+@media only screen and (max-width: 600px){
+	.config_texto{
+		align-items: justify;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+	}
+}
+
+.avatar img{
+	width: 60%;
+}
+
+@media only screen and (max-width: 600px){
+	.avatar img{
+		width: 40%;
+	}
+}
+
+.imagem_pdm img{
+	width:43%;
+}
+
+@media only screen and (max-width: 600px){
+	.imagem_pdm img{
+		width: 20%;
+	}
 }
