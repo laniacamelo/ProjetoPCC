@@ -19,9 +19,6 @@ header{
 	}
 }
 
-
-
-
 #mainNav{
 	padding: 0px;
 }
@@ -220,7 +217,7 @@ header{
 
 @media only screen and (max-width: 600px){
 	#texto_2 {
-		margin-left: 10%;
+		margin-left: 5%;
 		margin-right: 10%;
 	}	
 }
@@ -454,6 +451,8 @@ img{
 
 @media only screen and (max-width: 600px){
 	.imagem_pdm img{
-		width: 20%;
+		width: 80%;
 	}
 }
+
+
