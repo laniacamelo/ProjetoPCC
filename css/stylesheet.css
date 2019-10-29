@@ -455,4 +455,11 @@ img{
 	}
 }
 
+#texto_2 h2{
+	color: #CD6889;
+}
 
+.container-fluid{
+	padding-right: 5px;
+    padding-left: 5px;
+}
