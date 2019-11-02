@@ -489,3 +489,8 @@ img{
 #texto_4 img{
 	border: #000000 2px solid;
 }
+
+.config_comentario{
+	margin-left: 16%;
+	margin-right: 16%;
+}
